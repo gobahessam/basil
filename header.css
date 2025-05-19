@@ -1,0 +1,157 @@
+
+:root {
+    --light-bg: #ffecd6;
+    --accent: #af7440;
+    --accent-dark: #844c1b;
+    --text-color: #2c1d0e;
+    --font-main: 'Poppins', sans-serif;
+    --font-alt: Georgia, 'Times New Roman', Times, serif;
+}
+
+header.modern-header {
+    background: linear-gradient(to bottom, var(--light-bg), #ffd753);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: var(--font-main);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo h1 {
+    font-family: var(--font-alt);
+    font-size: 22px;
+    color: var(--accent-dark);
+}
+
+.logo p {
+    font-family: var(--font-alt);
+    font-size: 13px;
+    color: var(--accent-dark);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a.button,
+.dropdown-toggle,
+.search-form button {
+    background: var(--accent);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+nav a.button:hover,
+.dropdown-toggle:hover,
+.search-form button:hover {
+    background: var(--accent-dark);
+}
+
+.search-form {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.search-form input {
+    padding: 8px 12px;
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    font-family: var(--font-alt);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: white;
+    min-width: 160px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    overflow: hidden;
+    z-index: 200;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--accent-dark);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--light-bg);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 13px;
+    color: var(--accent-dark);
+}
+
+.contact-info a {
+    color: var(--accent-dark);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .search-form {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-form input {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        left: 0;
+        right: auto;
+    }
+}

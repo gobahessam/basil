@@ -1,0 +1,283 @@
+body {
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    padding: 0;
+    background-color: rgb(255, 236, 214);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255, 241, 190);
+}
+
+header {
+    display: flex;
+    background: linear-gradient(0deg, rgba(245,197,139,1) 0%, rgba(255,215,167,1) 50%, rgba(245,197,139,1) 100%);
+    height: 90px;
+}
+
+.header_left {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 13px;
+    padding-right: 13px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    color: white;
+    background-color: rgb(175, 116, 64);
+}
+
+.header_left>a {
+    height: 100%;
+    color: rgb(132, 76, 27);
+    text-align: center;
+}
+
+.header_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(132, 76, 27);
+}
+
+.header_right {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.user-info {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: rgb(132, 76, 27);
+    margin-right: 10px;
+}
+
+.logout-btn {
+    background-color: rgb(255, 99, 71);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: rgb(200, 60, 40);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.header_right .user-container {
+    display: flex;
+    align-items: center;
+    margin-right: 13px;
+}
+
+#phone_number:hover {
+    font-weight: bold;
+}
+
+.header_right>a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin: 0 0 0 0;
+    padding-right: 13px;
+    text-decoration: none;
+    color: rgb(132, 76, 27);
+}
+
+.header_right>span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 0 0 0 0;
+    padding-right: 13px;
+    color: rgb(132, 76, 27);
+}
+
+/* تنسيق صفحات تسجيل الدخول والتسجيل */
+.login-container, .signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(255, 241, 190);
+    min-height: 100vh;
+}
+
+.welcome-header {
+    background: linear-gradient(0deg, rgba(245,197,139,1) 0%, rgba(255,215,167,1) 50%, rgba(245,197,139,1) 100%);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(132, 76, 27);
+}
+
+.welcome-header h1 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.welcome-header p {
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+
+.login-box, .signup-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-box h2, .signup-box h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(132, 76, 27);
+    margin-bottom: 20px;
+}
+
+.login-box form, .signup-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input, .signup-box input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.login-box button, .signup-box button {
+    background-color: rgb(255, 99, 71);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-box button:hover, .signup-box button:hover {
+    background-color: rgb(200, 60, 40);
+}
+
+.login-box .error, .signup-box .error {
+    color: rgb(255, 99, 71);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-box p, .signup-box p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.login-box a, .signup-box a {
+    color: rgb(132, 76, 27);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-box a:hover, .signup-box a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 883px) {
+    header {
+        flex-direction: column;
+        height: 230px;
+        width: 100%;
+    }
+
+    .header_center, .header_left, .header_right {
+        width: 100%;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .header_left {
+        height: 300px;
+        justify-content: center;
+    }
+
+    .header_right {
+        align-items: center;
+    }
+
+    .header_right .user-container {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    header {
+        flex-direction: column;
+        height: 350px;
+        width: 100%;
+    }
+    .header_left {
+        height: 300px;
+        justify-content: center;
+    }
+
+    .header_center, .header_left, .header_right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .header_right .user-container {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+footer {
+    height: 50px;
+}

@@ -1,0 +1,39 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+h1 {
+    color: rgb(132, 76, 27);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#schedule {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+#schedule td, #schedule th {
+    border: 3px solid #90592d;
+    padding: 8px;
+    text-align: center;
+    font-size: 19px;
+    height: 40px;
+    color: rgb(132, 76, 27)
+}
+
+#today td {
+    background-color: rgb(255, 215, 83);
+}
+
+#schedule th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #ffc471;
+}

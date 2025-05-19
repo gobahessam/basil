@@ -1,0 +1,51 @@
+.book {
+    width: 310px;
+    background-color:rgb(255, 230, 171);
+    margin: 25px 35px 25px 35px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.book>a>img {
+    height: 450px;
+    width: 100%;
+}
+
+#book_name {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    width: 100%;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(132, 76, 27);
+    font-weight: bold;
+}
+
+#author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#author, #genre, #pub, #issues {
+    text-align: center;
+    color: rgb(132, 76, 27);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+#genre {
+    margin-bottom: 3px;
+}
+
+#issues {
+    margin-top: 5px;
+}

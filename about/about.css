@@ -1,0 +1,31 @@
+h1 {
+    color: rgb(132, 76, 27);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#map {
+    border: 3px solid gray;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgb(132, 76, 27);
+    text-indent: 50px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+#info a {
+    color:rgb(132, 76, 27);
+    font-weight: bold;
+}
+
+#info {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}

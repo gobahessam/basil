@@ -1,0 +1,224 @@
+/* إعادة تعيين الأنماط الأساسية لضمان التوافق */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* تنسيق الخلفية الرئيسية */
+body {
+    background: rgb(255, 236, 214);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* الحاوية الرئيسية */
+.auth-container {
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+/* الترحيب في الأعلى */
+.welcome-header {
+    background: linear-gradient(0deg, rgba(245,197,139,1) 0%, rgba(255,215,167,1) 50%, rgba(245,197,139,1) 100%);
+    padding: 30px 20px;
+    text-align: center;
+    color: rgb(132, 76, 27);
+    border-bottom: 5px solid #fff;
+}
+
+.welcome-header h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-header p {
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* صندوق النموذج */
+.auth-box {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.auth-box h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(132, 76, 27);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.auth-box h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: rgba(175, 116, 64, 0.8);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* تنسيق النموذج */
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-box input {
+    padding: 12px 15px 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.auth-box input:focus {
+    border-color: rgba(175, 116, 64, 0.8);
+    box-shadow: 0 0 8px rgba(175, 116, 64, 0.3);
+}
+
+/* أيقونة التبديل لكلمة المرور */
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(132, 76, 27);
+    padding: 5px;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: rgba(175, 116, 64, 0.9);
+}
+
+.auth-box button {
+    background: rgba(175, 116, 64, 0.9);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.auth-box button:hover {
+    background: rgb(132, 76, 27);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(132, 76, 27, 0.4);
+}
+
+/* رسائل الخطأ */
+.auth-box .error {
+    color: rgb(255, 99, 71);
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+/* النصوص والروابط */
+.auth-box p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.auth-box a {
+    color: rgb(132, 76, 27);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.auth-box a:hover {
+    color: rgba(175, 116, 64, 0.9);
+    text-decoration: underline;
+}
+
+/* تنسيق خاص لرسالة الترحيب بعد تسجيل الدخول */
+.user-info {
+    font-size: 16px;
+    color: rgb(132, 76, 27);
+    margin-bottom: 20px;
+}
+
+.logout-btn {
+    display: inline-block;
+    background: rgb(255, 99, 71);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: rgb(200, 60, 40);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(200, 60, 40, 0.4);
+}
+
+/* التصميم المتجاوب */
+@media screen and (max-width: 480px) {
+    .auth-container {
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    .welcome-header {
+        padding: 20px 15px;
+    }
+
+    .welcome-header h1 {
+        font-size: 22px;
+    }
+
+    .welcome-header p {
+        font-size: 14px;
+    }
+
+    .auth-box {
+        padding: 30px 20px;
+    }
+
+    .auth-box h2 {
+        font-size: 20px;
+    }
+
+    .auth-box input,
+    .auth-box button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
